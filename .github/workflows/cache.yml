@@ -20,11 +20,11 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Cache LLVM and Clang
         id: cache-llvm
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             C:/Program Files/LLVM
@@ -32,7 +32,7 @@ jobs:
           key: llvm-15
 
       - name: Install LLVM and Clang
-        uses: KyleMayes/install-llvm-action@v2
+        uses: ./
         with:
           version: "15"
           cached: ${{ steps.cache-llvm.outputs.cache-hit }}
