@@ -1,6 +1,8 @@
-## [2.0.10] - UNRELEASED
+## [2.0.10] - 2026-07-07
 
 - Added support for LLVM and Clang 22
+- Updated action runtime from Node 20 to Node 24
+- Updated workflows and dependencies to latest versions
 
 ## [2.0.9] - 2026-01-20
 
