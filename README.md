@@ -1,6 +1,6 @@
 # install-llvm-action
 
-[![Test](https://github.com/KyleMayes/install-llvm-action/actions/workflows/test.yml/badge.svg)](https://github.com/KyleMayes/install-llvm-action/actions/workflows/test.yml)
+[![Test](https://github.com/AtiDev17/install-llvm-action/actions/workflows/test.yml/badge.svg)](https://github.com/AtiDev17/install-llvm-action/actions/workflows/test.yml)
 
 A GitHub Action for downloading and installing LLVM and Clang binaries.
 
@@ -14,7 +14,7 @@ Released under the Apache License 2.0.
 
 ```yml
 - name: Install LLVM and Clang
-  uses: KyleMayes/install-llvm-action@v2
+  uses: AtiDev17/install-llvm-action@v2.0.10
   with:
     version: "10.0"
 ```
@@ -23,7 +23,7 @@ Released under the Apache License 2.0.
 
 ```yml
 - name: Install LLVM and Clang
-  uses: KyleMayes/install-llvm-action@v2
+  uses: AtiDev17/install-llvm-action@v2.0.10
   with:
     version: "10.0"
     directory: ${{ runner.temp }}/llvm
